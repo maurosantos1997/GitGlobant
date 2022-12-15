@@ -10,7 +10,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>listView</name>
+        <name>ListView</name>
     </types>
     <types>
         <members>*</members>
