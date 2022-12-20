@@ -87,6 +87,9 @@
         <label>Create Contact</label>
         <locationX>314</locationX>
         <locationY>518</locationY>
+        <connector>
+            <targetReference>Get_to_Git</targetReference>
+        </connector>
         <inputReference>contact</inputReference>
     </recordCreates>
     <recordLookups>
@@ -115,6 +118,16 @@
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_to_Git</name>
+        <label>Get to Git</label>
+        <locationX>314</locationX>
+        <locationY>638</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -194,7 +207,7 @@
             <targetReference>Contact_Info</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>contact</name>
         <dataType>SObject</dataType>
